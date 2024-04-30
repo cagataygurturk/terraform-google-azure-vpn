@@ -1,0 +1,12 @@
+formatter: "markdown"
+output:
+  file: "README.md"
+  mode: inject
+
+sections:
+  hide:
+    - resources
+    - modules
+
+header-from: docs/.header.md
+footer-from: docs/.footer.md

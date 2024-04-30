@@ -1,0 +1,17 @@
+name: Generate terraform docs
+on:
+  - pull_request
+
+jobs:
+  format:
+    runs-on: ubuntu-latest
+    name: Terraform Format Check
+    steps:
+      - name: Setup terraform
+        uses: hashicorp/setup-terraform@v2
+        with:
+          terraform_version: ${{ inputs.terraform_version }}
+
+      - name: Terraform fmt check
+        run: terraform fmt -check -diff -recursive
+        id: fmt

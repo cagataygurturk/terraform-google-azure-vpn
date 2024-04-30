@@ -6,10 +6,3 @@ terraform {
     }
   }
 }
-
-provider "azurerm" {
-  features {}
-}
-
-provider "google" {}
-provider "google-beta" {}

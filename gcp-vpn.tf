@@ -3,7 +3,7 @@ module "vpn-ha-azure" {
     azurerm_virtual_network_gateway.to_gcp
   ]
   source     = "terraform-google-modules/vpn/google//modules/vpn_ha"
-  version    = "~> 2.2"
+  version    = "~> 4.0"
   project_id = data.google_project.gcp_project.project_id
   network    = data.google_compute_network.vpc.self_link
   region     = var.gcp_vpn_region

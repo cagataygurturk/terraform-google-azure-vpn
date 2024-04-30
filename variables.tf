@@ -1,8 +1,3 @@
-variable "azure_subscription_id" {
-  type        = string
-  description = "Azure Subscription ID"
-}
-
 variable "azure_resource_group_name" {
   type        = string
   description = "Specifies the name of the resource group the Virtual Network Gateway is located in."
@@ -106,10 +101,6 @@ resource "random_id" "ipsec_secret" {
 }
 
 # Azure infrastructure
-data "azurerm_subscription" "current" {
-  subscription_id = var.azure_subscription_id
-}
-
 data "azurerm_resource_group" "current" {
   name = var.azure_resource_group_name
 }
