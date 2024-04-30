@@ -49,15 +49,19 @@ If your objective is to restrict Google APIs solely to private IPs and block pub
 
 | Name | Version |
 |------|---------|
+| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.3 |
 | <a name="requirement_azurerm"></a> [azurerm](#requirement\_azurerm) | ~> 2 |
+| <a name="requirement_google"></a> [google](#requirement\_google) | >= 5.7, < 6 |
+| <a name="requirement_google-beta"></a> [google-beta](#requirement\_google-beta) | >= 5.7, < 6 |
+| <a name="requirement_random"></a> [random](#requirement\_random) | ~> 3.4 |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
 | <a name="provider_azurerm"></a> [azurerm](#provider\_azurerm) | ~> 2 |
-| <a name="provider_google"></a> [google](#provider\_google) | n/a |
-| <a name="provider_random"></a> [random](#provider\_random) | n/a |
+| <a name="provider_google"></a> [google](#provider\_google) | >= 5.7, < 6 |
+| <a name="provider_random"></a> [random](#provider\_random) | ~> 3.4 |
 
 ## Resources
 
